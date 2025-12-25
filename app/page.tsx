@@ -9,7 +9,10 @@ export default function Home() {
             Satoshi's Archive
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            Browse Anna's Archive and permanently store documents on the BSV blockchain
+            Client-side tool for browsing Anna's Archive and storing document metadata on BSV
+          </p>
+          <p className="text-sm text-gray-500">
+            Pure browser-based software • Zero server involvement • User assumes all responsibility
           </p>
         </div>
 
@@ -22,7 +25,7 @@ export default function Home() {
               Search Archive →
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              Browse Creative Commons and public domain content from Anna's Archive
+              Search Anna's Archive using your own API key (runs in your browser)
             </p>
           </Link>
 
@@ -49,11 +52,33 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="pt-8 text-center text-sm text-gray-500">
+        <div className="p-6 bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-300 dark:border-yellow-800 rounded-lg">
+          <p className="text-sm font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
+            ⚠️ Legal Notice
+          </p>
+          <p className="text-sm text-yellow-700 dark:text-yellow-300">
+            This is a client-side software tool. You are solely responsible for ensuring legal
+            compliance with copyright laws. The platform owner has no knowledge of or control
+            over your activities.{" "}
+            <Link href="/terms" className="underline hover:text-yellow-600">
+              Read Terms of Service
+            </Link>
+          </p>
+        </div>
+
+        <div className="pt-8 text-center text-sm text-gray-500 space-y-2">
           <p>
             Built with Next.js, Tailwind CSS, and the BSV blockchain.
-            <br />
-            Only supports Creative Commons and public domain content.
+          </p>
+          <p>
+            <a
+              href="https://github.com/rohenaz/satoshis-archive/blob/master/ARCHITECTURE.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-500 hover:underline"
+            >
+              View Architecture & Legal Design →
+            </a>
           </p>
         </div>
       </main>
