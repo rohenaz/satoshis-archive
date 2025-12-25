@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "standalone",
+  // Disable telemetry for privacy
+  experimental: {
+    telemetry: {
+      enabled: false,
+    },
+  },
 };
 
 export default nextConfig;
