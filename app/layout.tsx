@@ -1,0 +1,21 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Satoshi's Archive",
+  description: "Browse Anna's Archive and permanently store documents on the BSV blockchain",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="antialiased">
+        {children}
+      </body>
+    </html>
+  );
+}
