@@ -13,6 +13,35 @@ export default function StorePage() {
   const [error, setError] = useState<string | null>(null);
   const [isConnected, setIsConnected] = useState(false);
 
+  // CRITICAL: Event listeners for wallet state changes
+  useEffect(() => {
+    if (!wallet) return;
+
+    const handleSwitchAccount = () => {
+      console.log("Account switched - refreshing wallet data");
+      // Re-fetch wallet data when user switches accounts
+      checkConnection();
+    };
+
+    const handleSignedOut = () => {
+      console.log("Wallet signed out");
+      setIsConnected(false);
+      setAddresses(null);
+      setBalance(null);
+      setError(null);
+    };
+
+    // Register event listeners
+    wallet.on("switchAccount", handleSwitchAccount);
+    wallet.on("signedOut", handleSignedOut);
+
+    // Cleanup to prevent memory leaks
+    return () => {
+      wallet.removeListener("switchAccount", handleSwitchAccount);
+      wallet.removeListener("signedOut", handleSignedOut);
+    };
+  }, [wallet]);
+
   useEffect(() => {
     if (wallet?.isReady) {
       checkConnection();
