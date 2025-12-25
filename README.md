@@ -4,11 +4,11 @@ Browse Anna's Archive content and permanently store documents on the BSV blockch
 
 ## Overview
 
-Satoshi's Archive is a web application that provides access to Creative Commons and public domain content from Anna's Archive, with the ability to permanently write selected documents to the Bitcoin SV blockchain for immutable storage.
+Satoshi's Archive is a web application that provides access to Anna's Archive, with the ability to permanently write document metadata to the Bitcoin SV blockchain for immutable storage and preservation.
 
 ## Features
 
-- **Browse Anna's Archive**: Search and discover Creative Commons publications and public domain materials
+- **Browse Anna's Archive**: Search and discover books, papers, and documents
 - **BSV Wallet Integration**: Connect your BSV wallet for blockchain transactions
 - **Permanent Storage**: Pay to write document metadata and content to the blockchain
 - **Immutable Records**: Documents stored on-chain are permanent and censorship-resistant
@@ -104,9 +104,22 @@ satoshis-archive/
 - **Open Source Books**: Ensure access to open source literature
 - **Educational Materials**: Create immutable educational resources
 
-## Legal & Ethical
+## Legal & Ethical Considerations
 
-This project only supports Creative Commons and public domain content from Anna's Archive. Users are responsible for ensuring they have the right to store content on the blockchain.
+**IMPORTANT**: Anna's Archive indexes a wide variety of content, including copyrighted works, public domain materials, and Creative Commons licensed publications. While Anna's Archive itself claims not to host files directly (only linking to third-party sources), much of the content available through the platform is protected by copyright.
+
+**User Responsibility**:
+- Users are solely responsible for ensuring they have the legal right to access, download, and store any content on the blockchain
+- Storing copyrighted material without permission may violate copyright laws in your jurisdiction
+- This application does not make legal determinations about content - it is a tool that users operate at their own discretion and legal risk
+- We strongly recommend only storing public domain, Creative Commons, or content you have explicit rights to
+
+**This Software**:
+- The Satoshi's Archive software itself is provided under the MIT license
+- The software does not endorse or encourage copyright infringement
+- Users assume all legal liability for their use of the platform
+
+**Intended Use**: This platform is designed for preserving legally permissible content such as public domain works, Creative Commons publications, personal documents, and materials where users hold appropriate rights.
 
 ## Contributing
 
