@@ -41,7 +41,8 @@
     "@bsv/sdk": "^1.9.29",
     "next": "^16.1.1",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "yours-wallet-provider": "^3.7.0"
   },
   "build": {
     "appId": "com.satoshisarchive.app",
