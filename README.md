@@ -19,7 +19,7 @@ Satoshi's Archive is a web application that provides access to Anna's Archive, w
 - **Framework**: Next.js 15 with App Router
 - **UI**: Tailwind CSS + shadcn/ui components
 - **State Management**: React hooks + Context API
-- **Wallet**: BSV wallet integration (Yours Wallet, HandCash, etc.)
+- **Wallet**: Yours Wallet integration using yours-wallet-provider
 
 ### Backend
 - **API Routes**: Next.js API routes for Anna's Archive integration
@@ -43,7 +43,7 @@ Satoshi's Archive is a web application that provides access to Anna's Archive, w
 - **shadcn/ui**: Accessible component library
 - **Anna's Archive API**: Document search and metadata
 - **BSV SDK**: Bitcoin SV blockchain integration
-- **Yours Wallet**: BSV wallet connectivity
+- **yours-wallet-provider**: Official Yours Wallet React provider
 
 ## Environment Variables
 
@@ -58,7 +58,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 - Node.js 20+
 - Bun (optional, recommended)
 - Anna's Archive API key (obtained via donation)
-- BSV wallet (Yours Wallet, HandCash, etc.)
+- Yours Wallet browser extension
 
 ### Installation
 
